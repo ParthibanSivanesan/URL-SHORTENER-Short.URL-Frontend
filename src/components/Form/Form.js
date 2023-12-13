@@ -49,7 +49,7 @@ export default function Form(props) {
 
     // axios ${serverBase}
     axiosConnect
-      .post(`/`, postData)
+      .post(`/short-url`, postData)
       .then((res) => props.setFetchedData(res.data[0]))
       .catch((err) => {
         props.setErrMsg("Something Went Wrong.");
