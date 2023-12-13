@@ -1,0 +1,43 @@
+.formstyle {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.textfieldContainer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.textfieldStyle {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  height: 25px;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.shortenButton {
+  background: linear-gradient(to right, rgb(27,153,198) 0%, rgb(94,96,169) 100%);
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: none;
+  height: 100%;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .textfieldStyle {
+    width: 60%;
+  }
+}
