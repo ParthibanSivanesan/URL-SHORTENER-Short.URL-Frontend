@@ -44,7 +44,7 @@ export default function Form(props) {
     const postData = { full: longURL };
 
     axios
-      .post(`${serverBase}/short`, postData)
+      .post(`${serverBase}/`, postData)
       .then((res) => props.setFetchedData(res.data[0]))
       .catch((err) => {
         props.setErrMsg("Something Went Wrong.");
