@@ -3,7 +3,7 @@ import styles from "./Form.module.css";
 import axios from "axios";
 
 // const serverBase = process.env.REACT_APP_BE_SERVERURL || "http://localhost:9003";
-const serverBase = 'https://your-url-shortner.onrender.com/short' || "http://localhost:9003";
+const serverBase = 'https://your-url-shortner.onrender.com' || "http://localhost:9003";
 
 
 
