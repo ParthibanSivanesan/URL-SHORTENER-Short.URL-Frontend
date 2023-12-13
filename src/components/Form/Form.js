@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import styles from "./Form.module.css";
 import axios from "axios";
 
-const serverBase = process.env.REACT_APP_BE_SERVERURL || "http://localhost:9003";
+// const serverBase = process.env.REACT_APP_BE_SERVERURL || "http://localhost:9003";
+const serverBase = 'https://your-url-shortner.onrender.com' || "http://localhost:9003";
+
+
 
 function is_url(str) {
   let exp = new RegExp(
