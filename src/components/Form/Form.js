@@ -5,7 +5,11 @@ import axios from "axios";
 // const serverBase = process.env.REACT_APP_BE_SERVERURL || "http://localhost:9003";
 const serverBase = 'https://your-url-shortner.onrender.com' || "http://localhost:9003";
 
-
+const axiosConnect = axios.create({
+    //baseURL: 'http://localhost:9000',
+    baseURL: 'https://your-url-shortner.onrender.com',
+    withCredentials: true,
+})
 
 function is_url(str) {
   let exp = new RegExp(
@@ -43,8 +47,9 @@ export default function Form(props) {
     const longURL = fix_url(inputURL);
     const postData = { full: longURL };
 
-    axios
-      .post(`${serverBase}/`, postData)
+    // axios ${serverBase}
+    axiosConnect
+      .post(`/`, postData)
       .then((res) => props.setFetchedData(res.data[0]))
       .catch((err) => {
         props.setErrMsg("Something Went Wrong.");
