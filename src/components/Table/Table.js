@@ -4,7 +4,7 @@ import styles from "./Table.module.css";
 
 // const baseUrl = process.env.REACT_APP_BE_SERVERURL || "http://localhost:9003";
 
- const baseUrl = 'https://your-url-shortner.onrender.com/short' || "http://localhost:9003";
+ const baseUrl = 'https://your-url-shortner.onrender.com' || "http://localhost:9003";
 
 export default function Table(props) {
   const copyToClipboard = () => {
